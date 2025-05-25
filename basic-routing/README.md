@@ -1,4 +1,4 @@
-# MERN - Basic Routing
+# MERN (React) - Basic Routing
 
 A simple, responsive React routing demo using **React Router v7**, **React Icons**, and **Vite**. This project demonstrates the basics of SPA navigation with an adaptive header featuring a hamburger menu for mobile responsiveness.
 
