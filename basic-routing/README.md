@@ -85,13 +85,16 @@ Icons toggle based on isOpen, and styles adjust with media queries under 768px.
 
 ## 📷 Screenshots
 
-Home - Desktop (Active)
+### Home - Desktop (Active)
 ![Home - Desktop (Active)](./readme_images/home-desktop-active.png)
-Home - Desktop (Active and Hover)
+
+### Home - Desktop (Active and Hover)
 ![Home - Desktop (Active and Hover)](./readme_images/home-desktop-active-hover.png)
-Home - Mobile
+
+### Home - Mobile
 ![Home - Mobile](./readme_images/home-mobile.png)
-Home - Mobile (Hamburger Menu)
+
+### Home - Mobile (Hamburger Menu)
 ![Home - Mobile (Hamburger Menu)](./readme_images/home-mobile-hambuger.png)
 
 ## 📌 Future Scope/Improvements
