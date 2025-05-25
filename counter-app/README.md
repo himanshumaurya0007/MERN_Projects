@@ -57,7 +57,7 @@ Now the app should be running at: http://localhost:5173
 - ESLint for code quality
 - React Hooks (useState)
 
-🎨 UI Highlights
+## 🎨 UI Highlights
 
 - 🧾 Minimalistic design using pure CSS
 - 📱 Fully responsive for mobile, tablet, and desktop
