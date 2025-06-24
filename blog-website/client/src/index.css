@@ -1,0 +1,21 @@
+:root {
+    /* Light mode - theme */
+
+    /* Background */
+    --bg-color: oklch(0.985 0.002 247.839);
+    /* Primary text */
+    --text-primary: oklch(0.278 0.033 256.848);
+    /* Secondary text */
+    --text-secondary: oklch(0.551 0.027 264.364);
+    /* Accent color (e.g., links, buttons) */
+    --accent-color: oklch(0.546 0.245 262.881);
+    /* Alternate accent (e.g., tags, categories) */
+    --alt-accent-color: oklch(0.558 0.288 302.321);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}

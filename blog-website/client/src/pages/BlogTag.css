@@ -1,0 +1,33 @@
+.blog-tag-container {
+    padding: 1.25rem;
+}
+
+.blog-tag-header {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.blog-tag-header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.blog-tag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .blog-tag {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .blog-tag {
+        gap: 10px;
+    }
+}

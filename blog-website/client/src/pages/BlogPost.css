@@ -1,0 +1,146 @@
+.blog-post-container {
+    padding: 1.25rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.blog-post-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-post-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* ---------- Meta data ---------- */
+.meta-top,
+.meta-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin: 15px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.meta-top .category,
+.meta-top .views,
+.meta-bottom .author,
+.meta-bottom .date-read-time {
+    font-weight: 500;
+}
+
+/* ---------- Text blocks ---------- */
+.blog-post-excerpt {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.blog-post-content {
+    margin-top: 30px;
+}
+
+.blog-post-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+/* ---------- Images inside content ---------- */
+.blog-post-content img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* ---------- Tags ---------- */
+.blog-post-tags {
+    margin-top: 40px;
+}
+
+.blog-post-tags ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.blog-post-tags .tag {
+    background-color: var(--alt-accent-color);
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--bg-color);
+    list-style: none;
+}
+
+.blog-post-tags .tag a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.blog-post-tags .tag:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* ---------- Footer ---------- */
+.blog-post-footer {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #777;
+    text-align: center;
+}
+
+/* ================= Responsive Breakpoints ================= */
+@media screen and (max-width: 768px) {
+    .blog-post-title {
+        font-size: 2rem;
+    }
+
+    .meta-top,
+    .meta-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .blog-post-tags .tag {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .blog-post-title {
+        font-size: 1.5rem;
+    }
+
+    .meta-top,
+    .meta-bottom {
+        font-size: 0.8rem;
+    }
+
+    .blog-post-tags .tag {
+        padding: 6px 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .blog-post-container {
+        padding: 0;
+    }
+}
