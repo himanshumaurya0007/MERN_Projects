@@ -1,4 +1,4 @@
-# MAERN (React) - Counter App
+# MERN (React) - Counter App
 
 A clean, interactive **React 19** counter application built using **Vite 6**. It demonstrates fundamental concepts of React state management with useState, conditional rendering for modals, and responsive design with modern **CSS**.
 
