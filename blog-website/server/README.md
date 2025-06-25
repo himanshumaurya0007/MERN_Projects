@@ -40,7 +40,7 @@ server/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/mern-blog-server.git
+git clone https://github.com/himanshumaurya0007/MERN_Projects.git
 cd blog-website
 cd server
 ```
