@@ -228,7 +228,7 @@ The frontend runs on http://localhost:5173 and connects to the backend running o
 - Optionally, use OAuth (Google Sign-In) for faster onboarding.
 
 ## 🛠️ Improvements for Eazyvenue Website
-After analyzing the current implementation of [eazyvenue](www.eazyvenue.com), I observed that several key features have already been effectively implemented, such as:
+After analyzing the current implementation of eazyvenue, I observed that several key features have already been effectively implemented, such as:
 - A responsive booking calendar for users
 
 - Well-structured venue categorization (by type, location, capacity)
