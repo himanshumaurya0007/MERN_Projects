@@ -1,6 +1,6 @@
 // src/pages/HomePage.jsx
 import { Link } from 'react-router-dom';
-import { MapPin } from 'lucide-react';
+import { MapPin, Shield } from 'lucide-react';
 
 export default function HomePage() {
     return (
@@ -20,14 +20,24 @@ export default function HomePage() {
                     Whether it's a corporate meeting or a wedding, we've got the right space for you.
                 </p>
 
-                {/* CTA Button */}
+                {/* CTA Buttons */}
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+                    {/* View Venues */}
                     <Link
                         to="/venues"
                         className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-xl font-medium text-base shadow-md hover:bg-blue-700 transition duration-200"
                     >
                         <MapPin className="h-5 w-5" />
                         View Venues
+                    </Link>
+
+                    {/* Admin Panel */}
+                    <Link
+                        to="/admin/venues"
+                        className="flex items-center gap-2 px-6 py-3 bg-gray-800 text-white rounded-xl font-medium text-base shadow-md hover:bg-gray-900 transition duration-200"
+                    >
+                        <Shield className="h-5 w-5" />
+                        Admin Panel
                     </Link>
                 </div>
             </div>
