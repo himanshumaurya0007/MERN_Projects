@@ -1,0 +1,62 @@
+.footer-container {
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+    padding: 2rem 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-content {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.footer-designer {
+    margin-top: 7px;
+    font-size: 0.95rem;
+}
+
+.footer-designer #linkedin-link {
+    margin-left: 5px;
+}
+
+.footer-designer a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.footer-designer a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 1.5rem 2rem;
+    }
+
+    .footer-content {
+        font-size: 0.85rem;
+    }
+
+    .footer-designer {
+        gap: 5px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer-container {
+        padding: 1rem 2rem;
+    }
+
+    .footer-content {
+        font-size: 0.8rem;
+    }
+
+    .footer-designer {
+        font-size: 0.85rem;
+        align-items: center;
+    }
+}

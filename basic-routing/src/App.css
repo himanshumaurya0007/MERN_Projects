@@ -1,0 +1,154 @@
+/* Header Styles */
+.header {
+  padding: 1.25rem;
+  color: #3d3d3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.55);
+}
+
+.header h1 {
+  margin-left: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+/* Navigation Menu Styles */
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-menu a {
+  color: #3d3d3d;
+  font-size: 1.125rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-menu a:hover {
+  border-bottom: 0.125rem solid #3d3d3d;
+}
+
+.nav-menu a.active {
+  background-color: #cdcdcd;
+  color: #292929;
+  transition: background-color 0.5s, color 0.5s;
+  border-radius: 1.25rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 0.125rem solid #3d3d3d;
+}
+
+/* Page Content Styling */
+.page {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.page h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+/* Responsive Enhancements */
+@media screen and (max-width: 1024px) {
+  .header h1 {
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+  }
+
+  .nav-menu {
+    margin-right: 1rem;
+  }
+
+  .page h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+    margin: 0;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-menu.open {
+    display: block;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    list-style: none;
+  }
+
+  .nav-menu a {
+    padding: 0.25rem 0;
+  }
+
+  .nav-menu a:hover,
+  .nav-menu a.active {
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    padding-bottom: 0.125rem;
+    background-color: #fff;
+    border-bottom: 0.125rem solid #3d3d3d;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .page h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
