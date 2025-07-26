@@ -1,8 +1,8 @@
-# 📝 MERN - Blog Website
+# MERN Stack - Blog Website
 
-A dynamic and responsive Blog Website built using the MERN stack (MongoDB, Express, React, Node.js). This project showcases full-stack development with blog creation, category filtering, tagging, and an interactive UI. It emphasizes modular design, clean architecture, and scalable routing logic for both client and server.
+A dynamic and responsive **Blog Website** built using the **MERN stack (MongoDB, Express, React, Node.js)**. This project showcases full-stack development with blog creation, category filtering, tagging, and an interactive UI. It emphasizes modular design, clean architecture, and scalable routing logic for both client and server.
 
-# 🧠 Features
+## 🧠 Features
 
 - 📄 Display blog posts by category and tag
 
@@ -16,8 +16,9 @@ A dynamic and responsive Blog Website built using the MERN stack (MongoDB, Expre
 
 - 🚀 Built with modern tooling: Vite, ESLint
 
-# 📁 Project Structure
-```
+## 📁 Project Structure
+
+```bash
 mern-blog-website/
 ├── client/                     # React frontend
 │   ├── public/                 # Static assets
@@ -31,7 +32,7 @@ mern-blog-website/
 │   │   └── index.css           # Global styles
 │   ├── package.json
 │   └── vite.config.js
-├── server/                     # Express backend
+└── server/                     # Express backend
     ├── config/db.js            # MongoDB connection logic
     ├── controllers/            # Blog controller
     ├── models/Blog.js          # Mongoose schema
@@ -43,15 +44,17 @@ mern-blog-website/
     └── package.json
 ```
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
-## 1. Clone the Repository
+### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/himanshumaurya0007/MERN_Projects.git
 cd MERN_Projects/blog-website
 ```
 
-## 2. Start the Server
+### 2. Start the Server
+
 ```bash
 cd server
 npm install
@@ -59,17 +62,20 @@ node data/seed.js
 node server.js
 ```
 
-## 3. Start the Client
+### 3. Start the Client (In another terminal)
+
 ```bash
 cd client
 npm install
 npm run dev
 ```
-Now the app should be running at: http://localhost:5173/blog
 
-# 🛠️ Technologies Used
+Now the app should be running at: `http://localhost:5173/blog`.
 
-## Frontend
+## 🛠️ Technologies Used
+
+### Frontend
+
 - React 19
 
 - Vite 6
@@ -80,7 +86,8 @@ Now the app should be running at: http://localhost:5173/blog
 
 - ESLint for code formatting
 
-## Backend
+### Backend
+
 - Node.js
 
 - Express.js
@@ -91,7 +98,7 @@ Now the app should be running at: http://localhost:5173/blog
 
 - REST API design
 
-# 🎨 UI Highlights
+## 🎨 UI Highlights
 
 - 📰 Blog Cards with tag/category indicators
 
@@ -103,36 +110,36 @@ Now the app should be running at: http://localhost:5173/blog
 
 - 🧩 Organized component-based structure for scalability
 
-# 📸 Screenshots
+## 📸 Screenshots
 
 - Display all blogs
-![](./readme_images/all-blogs.png)
+![Display all blogs](./readme_images/all-blogs.png)
 
 - Dropdown menu and hover effect
-![](./readme_images/dropdown-and-hover.png)
+![Dropdown menu and hover effect](./readme_images/dropdown-and-hover.png)
 
 - Web development category blogs
-![](./readme_images/web-dev-category-blogs.png)
+![Web development category blogs](./readme_images/web-dev-category-blogs.png)
 
-- No blogs within a specific category (App Development) 
-![](./readme_images/no-blogs.png)
+- No blogs within a specific category (App Development)
+![No blogs within a specific category (App Development)](./readme_images/no-blogs.png)
 
 - Backend category blogs
-![](./readme_images/backend-category-blogs.png)
+![Backend category blogs](./readme_images/backend-category-blogs.png)
 
 - Basics of mongodb - blogpost
-![](./readme_images/basics-of-mongodb-blogpost.png)
+![Basics of mongodb - blogpost](./readme_images/basics-of-mongodb-blogpost.png)
 
 - mongodb - tag blogs
-![](./readme_images/mongodb-tag-blogs.png)
+![mongodb - tag blogs](./readme_images/mongodb-tag-blogs.png)
 
 - mern stack - blogpost
-![](./readme_images/mern-stack-blogpost.png)
+![mern stack - blogpost](./readme_images/mern-stack-blogpost.png)
 
 - react - tag blogs
-![](./readme_images/react-tag-blogs.png)
+![react - tag blogs](./readme_images/react-tag-blogs.png)
 
-# 🔧 Future Improvements
+## 🔧 Future Improvements
 
 - User authentication & dashboard
 
@@ -144,15 +151,23 @@ Now the app should be running at: http://localhost:5173/blog
 
 - SEO optimization for blogs
 
-# 📜 License
+## 📜 License
+
 This project is licensed under the MIT License.
 
-# 🙋‍♂️ Author
-Himanshu Maurya<br>
-📍 Badlapur, Mumbai, India<br>
-🏆 Winner → HackWave Hackathon 2024
+## 🙋‍♂️ Author
 
-# 📘 Learnings
+**Himanshu Maurya** - *Full-stack MERN Developer*
+
+📍 Badlapur, Mumbai, India
+
+🏆 Winner – HackWave Hackathon 2024
+
+📧 [himanshumaurya7781@gmail.com](mailto:himanshumaurya7781@gmail.com)
+
+🔗 [LinkedIn](www.linkedin.com/in/himanshumaurya0007)
+
+## 📘 Learnings
 
 - Built a full-stack project with the MERN stack
 

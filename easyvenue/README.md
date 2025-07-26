@@ -1,44 +1,52 @@
-# 🏨 Eazyvenue - Mini Venue Booking Dashboard
+# Eazyvenue - Mini Venue Booking Dashboard
 
 A full-stack web application built for **venue owners and users** to manage and book event spaces. Designed and implemented as part of the Eazyvenue.com hiring process with scalable architecture, modular codebase, and RESTful API best practices.
 
 ## 🚀 Features
 
 ### 🛠️ Admin (Venue Owners)
+
 - Add new venues with venue name, location, capacity, and pricing details.
+
 - Mark dates as unavailable (e.g., for offline bookings).
+
 - View listed of venues with control over availability.
+
 - View recent bookings.
 
 ### 👥 User (Public)
+
 - Browse available venues with details.
+
 - Book a venue for specific dates by filling form which includes users name, email, booking date, and how many hours to book the venue for.
 
 ## 📁 Project Structure
-```
+
+```bash
 easyvenue/
-├── backend/ # Node.js, Express, MongoDB
+├── backend/              # Node.js, Express, MongoDB
 │ ├── models/
 │ ├── controllers/
 │ ├── routes/
 │ ├── validations/
 │ ├── middlewares/
 │ └── server.js
-├── frontend/ # React, Vite, Tailwind CSS
-│ ├── pages/
-│ ├── components/
-│ ├── layouts/
-│ ├── services/
-│ └── App.jsx
+└── frontend/             # React, Vite, Tailwind CSS
+  ├── pages/
+  ├── components/
+  ├── layouts/
+  ├── services/
+  └── App.jsx
 ```
 
-## 🔗 Live Demo
+<!-- ## 🔗 Live Demo -->
 
-🌐 [Click here to view the deployed app](https://esayvenue-frontend.vercel.app)
+<!-- 🌐 [Click here to view the deployed app](https://esayvenue-frontend.vercel.app) -->
 
 ## 📦 Tech Stack
 
 ### 🧠 Frontend
+
 | Tech / Library               | Purpose                                                                                                            |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | **React 19**                 | Core library for building UI                                                                                       |
@@ -50,6 +58,7 @@ easyvenue/
 | **Lucide React**             | Icon set used in the UI                                                                                            |
 
 ### 🔧 Backend
+
 | Tech / Library        | Purpose                             |
 | --------------------- | ----------------------------------- |
 | **Node.js**           | JavaScript runtime                  |
@@ -64,6 +73,7 @@ easyvenue/
 ## 📌 API Endpoints
 
 ### 🔍 Venue Routes
+
 | Method | Endpoint                         | Description                        |
 |--------|----------------------------------|------------------------------------|
 | GET    | `/api/venues`                    | List all venues                    |
@@ -80,7 +90,8 @@ easyvenue/
 
 ## 📌 API Endpoints (Mapped to Frontend Routes)
 
-🧑‍💼 Public/User Routes (PublicLayout)
+- 🧑‍💼 Public/User Routes (PublicLayout)
+
 | **Frontend Route**       | **Component**    | **Required API Endpoint(s)**                                                                   | **HTTP Method(s)**  |
 | ------------------------ | ---------------- | ---------------------------------------------------------------------------------------------- | ------------------- |
 | `/`                      | `HomePage`       | `GET /api/venues` *(featured/latest)*                                                          | `GET`               |
@@ -89,7 +100,7 @@ easyvenue/
 | `/book/:venueId`         | `BookingForm`    | `POST /api/bookings` *(submit booking request)*<br>`GET /api/venues/:id` *(for venue details)* | `GET`, `POST`       |
 | `/book/:venueId/confirm` | `BookingSuccess` | (Optional fetch/confirmation display)                                                          | `GET` *(if needed)* |
 
-🛠️ Admin Routes (AdminLayout)
+- 🛠️ Admin Routes (AdminLayout)
 
 | **Frontend Route**               | **Component**      | **Required API Endpoint(s)**                                                                                     | **HTTP Method(s)** |
 | -------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------- | ------------------ |
@@ -101,10 +112,11 @@ easyvenue/
 ## 🧪 How to Run Locally
 
 ### Clone the project locally
+
 ```bash
 git clone https://github.com/himanshumaurya0007/MERN_Projects.git
 cd MERN_Projects/easyvenue
-``` 
+```
 
 ### 📦 Backend Setup
 
@@ -115,19 +127,23 @@ npm install
 node data/seed.js
 npm run dev
 ```
-### 🌐 Frontend Setup
+
+### 🌐 Frontend Setup (In another terminal)
+
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-The frontend runs on http://localhost:5173 and connects to the backend running on http://localhost:5000.
+
+The frontend runs on `http://localhost:5173` and connects to the backend running on `http://localhost:5000`.
 
 ## 📸 Screenshots
+
 - HomePage - Introduction to EasyVenue
 ![Introduction to EasyVenue](./readme_images/HomePage.png)
 
-- VenueList - List all venues 
+- VenueList - List all venues
 ![List all venues ](./readme_images/VenueList.png)
 
 - VenueList (end) - List all venues
@@ -158,6 +174,7 @@ The frontend runs on http://localhost:5173 and connects to the backend running o
 ![Update blocked/unavailable dates](./readme_images/AvailabilityForm.png)
 
 ## 📃 Assumptions
+
 - Venue owners are considered authenticated by default (no auth layer implemented in this demo).
 
 - Date availability is based on exact match and assumes day-wise blocking.
@@ -167,9 +184,11 @@ The frontend runs on http://localhost:5173 and connects to the backend running o
 ## 🧠 Ideation: Advanced Features (Future Enhancements)
 
 ### 🔍 1. Capturing User Search Activity
+
 **Objective:** Understand user preferences and optimize venue recommendations.
 
 **Approach:**
+
 - Track and store user search inputs such as keywords, locations, capacity filters, and date selections in a SearchLogs collection.
 
 - Analyze frequent queries and peak search periods.
@@ -177,23 +196,26 @@ The frontend runs on http://localhost:5173 and connects to the backend running o
 - Feed insights into a recommendation engine to suggest venues based on popular trends or past user behavior.
 
 ### 📊 2. Admin Analytics Dashboard
+
 **Objective:** Provide venue owners with actionable insights to improve engagement and bookings.
 
 **Approach:**
+
 - Integrate an analytics dashboard using libraries like Recharts or Chart.js.
 
 - Key metrics:
-    - Total bookings per venue
+  - Total bookings per venue
 
-    - Monthly/weekly trends
+  - Monthly/weekly trends
 
-    - Most blocked dates (offline bookings)
+  - Most blocked dates (offline bookings)
 
-    - Top performing venues by views and conversions
+  - Top performing venues by views and conversions
 
 - Use role-based access control (RBAC) to restrict dashboard visibility to admins and venue owners.
 
 ### 📅 3. Calendar View for Venue Availability
+
 **Objective:** Enhance UX with a visual booking and availability interface.
 
 **Approach:**
@@ -202,33 +224,37 @@ The frontend runs on http://localhost:5173 and connects to the backend running o
 
 - For venue owners:
 
-    - View and block unavailable dates interactively.
+  - View and block unavailable dates interactively.
 
 - For users:
 
-    - See available dates before booking, avoiding trial-error.
+  - See available dates before booking, avoiding trial-error.
 
 - Sync calendar events with the unavailableDates field in the backend.
 
 ### 🔐 4. Basic Authentication (Admin & Venue Owners)
+
 **Objective:** Secure the system and provide personalized experiences.
 
 **Approach:**
+
 - Implement JWT-based authentication with access tokens and refresh tokens.
 
 - User roles:
-    - Admin: Full access to all venue and user data.
+  - Admin: Full access to all venue and user data.
 
-    - Venue Owner: Access to only their own venues/bookings.
+  - Venue Owner: Access to only their own venues/bookings.
 
-    - User: Can browse and book venues.
+  - User: Can browse and book venues.
 
 - Protect sensitive routes using middleware.
 
 - Optionally, use OAuth (Google Sign-In) for faster onboarding.
 
 ## 🛠️ Improvements for Eazyvenue Website
+
 After analyzing the current implementation of eazyvenue, I observed that several key features have already been effectively implemented, such as:
+
 - A responsive booking calendar for users
 
 - Well-structured venue categorization (by type, location, capacity)
@@ -249,8 +275,14 @@ One small improvement would be to restrict the booking calendar's date range. Cu
 
 This would align better with standard event planning cycles and improve venue availability management.
 
-## 👨‍💻 Developer
-Himanshu Maurya<br>
-Full-stack MERN Developer<br>
-📧 [himanshumaurya7781@gmail.com](mailto:himanshumaurya7781@gmail.com)<br>
-🔗 [LinkedIn](www.linkedin.com/in/himanshumaurya0007) 
+## 👨‍💻 Author
+
+**Himanshu Maurya** - *Full-stack MERN Developer*
+
+📍 Badlapur, Mumbai, India
+
+🏆 Winner – HackWave Hackathon 2024
+
+📧 [himanshumaurya7781@gmail.com](mailto:himanshumaurya7781@gmail.com)
+
+🔗 [LinkedIn](www.linkedin.com/in/himanshumaurya0007)

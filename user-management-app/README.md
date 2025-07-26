@@ -1,10 +1,11 @@
-# 👥 User Management MERN Stack Application
+# MERN Stack - User Management Application
 
 A full-stack **User Management System** built using the **MERN stack (MongoDB, Express.js, React.js, Node.js)**. This application allows administrators to perform full CRUD operations on user data, handle routing across both backend and frontend, and manage stateful interactions with a clean and responsive UI.
 
 ## 🔍 Features
 
 - 🧾 Add, update, delete, and list users
+
 - 📁 RESTful API with clean controller-service separation
 
 - 📦 MongoDB integration via Mongoose
@@ -17,7 +18,7 @@ A full-stack **User Management System** built using the **MERN stack (MongoDB, E
 
 ## 🏗️ Project Structure
 
-```
+```bash
 user-management-app/
 ├── frontend/                     # React frontend
 │   ├── public/
@@ -66,12 +67,13 @@ PORT=5000
 ```
 
 ▶ Start Server (Development)
+
 ```bash
 cd src
 npm run dev
 ```
 
-Server runs on: `http://localhost:5000`
+Server runs on: `http://localhost:5000`.
 
 ### 3. Setup Frontend (In another terimnal)
 
@@ -80,13 +82,19 @@ cd frontend
 npm install
 ```
 
+🔑 Configure `.env`
+
+```bash
+VITE_API_BASE_URL=http://localhost:5000/api/v1
+```
+
 ▶ Start Client
 
 ```bash
 npm run dev
 ```
 
-App runs on: `http://localhost:5173/users`
+App runs on: `http://localhost:5173/users`.
 
 ## 🛠️ Technologies Used
 
@@ -164,9 +172,15 @@ This project is licensed under the MIT License.
 
 ## 🙋‍♂️ Author
 
-**Himanshu Maurya**<br>
-📍 Badlapur, Mumbai, India<br>
+**Himanshu Maurya** - *Full-stack MERN Developer*
+
+📍 Badlapur, Mumbai, India
+
 🏆 Winner – HackWave Hackathon 2024
+
+📧 [himanshumaurya7781@gmail.com](mailto:himanshumaurya7781@gmail.com)
+
+🔗 [LinkedIn](www.linkedin.com/in/himanshumaurya0007)
 
 ## 🧠 Learnings
 
