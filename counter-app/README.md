@@ -129,7 +129,7 @@ This project is licensed under the MIT License.
 
 📧 [himanshumaurya7781@gmail.com](mailto:himanshumaurya7781@gmail.com)
 
-🔗 [LinkedIn](www.linkedin.com/in/himanshumaurya0007)
+🔗 [LinkedIn](https://www.linkedin.com/in/himanshumaurya0007)
 
 ## 🧠 Learnings
 

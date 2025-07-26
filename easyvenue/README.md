@@ -285,4 +285,4 @@ This would align better with standard event planning cycles and improve venue av
 
 📧 [himanshumaurya7781@gmail.com](mailto:himanshumaurya7781@gmail.com)
 
-🔗 [LinkedIn](www.linkedin.com/in/himanshumaurya0007)
+🔗 [LinkedIn](https://www.linkedin.com/in/himanshumaurya0007)
