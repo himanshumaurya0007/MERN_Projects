@@ -63,8 +63,8 @@ mern-todo-app/
 ### 1. Clone the Repository
 
 ```bash
-git clone <https://github.com/himanshumaurya0007/MERN_Projects.git>
-cd MERN_Projects/mern-todo-app
+git clone https://github.com/himanshumaurya0007/MERN_Projects.git
+cd MERN_Projects/tasktide
 ```
 
 ### 2. Setup Backend
@@ -112,10 +112,10 @@ The frontend will start on: `http://localhost:5173`
 
 | Feature               | Description                                   |
 | --------------------- | --------------------------------------------- |
-| ➕ Add Task            | Create new tasks via a form.                  |
+| ➕ Add Task           | Create new tasks via a form.                  |
 | ✏️ Edit Task          | Update existing task title or description.    |
-| ✅ Complete Task       | Mark tasks as done and filter completed ones. |
-| 🗑️ Delete Task       | Permanently remove a task.                    |
+| ✅ Complete Task      | Mark tasks as done and filter completed ones. |
+| 🗑️ Delete Task        | Permanently remove a task.                    |
 | 🔄 Persistent Storage | All data stored in MongoDB Atlas.             |
 
 ## 🛠️ Technologies Used
@@ -177,11 +177,11 @@ The frontend will start on: `http://localhost:5173`
 - View specific task
 ![View specifc task](./readme_images/view-specific-task.png)
 
-- Edit task
-![Edit task](./readme_images/update-task.png)
+- Edit Task
+![Edit Task](./readme_images/update-task.png)
 
-- Delete task (Confirmation)
-![Delete task (Confirmation)](./readme_images/delete-task.png)
+- Delete Task (Confirmation)
+![Delete Task (Confirmation)](./readme_images/delete-task.png)
 
 ## 🔮 Future Enhancements
 
