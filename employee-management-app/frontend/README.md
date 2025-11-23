@@ -1,0 +1,6 @@
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ4MjJhZDZmNzMzN2I2NGZjMDMxZDUiLCJpYXQiOjE3NTkwNzU0OTAsImV4cCI6MTc1OTY4MDI5MH0.KSxRD0bhW9bnwZyfHCIxFTjwD4s9kqGCXGSRqt_1kaM
+
+
+curl -i -X POST http://localhost:5000/api/v1/auth/refresh-token \
+--cookie "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGQ4MjJhZDZmNzMzN2I2NGZjMDMxZDUiLCJpYXQiOjE3NTkwNzkyNTAsImV4cCI6MTc1OTY4NDA1MH0.O6YlewBfzvTdnIX2N6nh1lpw__9juB-vj6kwpKRGzjw" \
+-H "Origin: http://localhost:5173"
